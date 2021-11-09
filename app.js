@@ -14,12 +14,12 @@ formulario.addEventListener("submit", (e)=>{
     datos.lastname = document.getElementById("lname").value;
     datos.id = document.getElementById("identificacion").value;
     console.log(datos);
+    tabla.children[0].innerHTML += (`
+        <tr>
+        <td>${datos.name}</td>
+        <td>${datos.lastname}</td>
+        <td>${datos.id}</td>
+        </tr>
+    `)
 })
 
-/* tabla.children[0].innerHTML += (`
-    <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    </tr>
-`) */
