@@ -10,14 +10,16 @@ const datos = {
 formulario.addEventListener("submit", (e)=>{
     console.log(e)
     e.preventDefault();
-    datos.name = document.getElementById("fname").value
+    datos.name = document.getElementById("fname").value;
+    datos.lastname = document.getElementById("lname").value;
+    datos.id = document.getElementById("identificacion").value;
     console.log(datos);
 })
 
-tabla.children[0].innerHTML += (`
+/* tabla.children[0].innerHTML += (`
     <tr>
     <td>Alfreds Futterkiste</td>
     <td>Maria Anders</td>
     <td>Germany</td>
     </tr>
-`)
+`) */
